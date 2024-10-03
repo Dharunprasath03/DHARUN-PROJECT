@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><h1>DHARUN's PROJECT</h1></center><hr>
+<center>
+    <h2>Registration Form</h2><hr style="text-decoration-thickness: 20px;">
+
+    <form id="registrationForm" action="submit_form.php" method="POST">
+        <table>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><small class="error" id="usernameError"></small></td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><small class="error" id="emailError"></small></td>
+            </tr>
+            
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><small class="error" id="passwordError"></small></td>
+            </tr>
+            
+            <tr>
+                <td><label for="confirmPassword">Confirm Password:</label></td>
+                <td><input type="password" id="confirmPassword" name="confirmPassword" required></td>
+            </tr>
+            <tr>
+                <td><small class="error" id="confirmPasswordError"></small></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2"><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</center>
+<hr>
+    <script src="script.js"></script>
+</body>
+</html>
